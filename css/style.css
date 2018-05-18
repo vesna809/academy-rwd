@@ -46,7 +46,6 @@
 	flex-wrap: wrap;
 	align-items: stretch;
 	justify-content: space-between;
-	justify-content: space-between;
 
 	background-color: #ffffff;
 	font-family: Geometria, Arial, Sans-serif;
@@ -191,28 +190,43 @@
 
 
 .main {
+	width: ;
+	margin-top: ;
+	margin-right: ;
+	margin-left: ;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
 	background-color: #ffffff;
 }
 
 
 .h1 {
+	display: flex;
+	flex-wrap: wrap;
 	font-family: MullerBold, Arial, Sans-serif;
 	list-style: none;
 	}
 
 .visually-hidden {
+	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	background-color: #ffffff;
 	}
 
 .banner {
-	height: px;
+	width: : px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .banner__title-large {
+	display: flex;
+	flex-wrap: wrap;
 	font-family: MullerBold, Arial, Sans-serif;
-	color: #ffffff;
+	color: ;
 	font-size: 60px;
 	text-transform: uppercase;
 }
@@ -220,6 +234,8 @@
 
 
 .h2 {
+	display: flex;
+	flex-wrap: wrap;
 	font-family: MullerBold, Arial, Sans-serif;
 	font-size: 36px;
 	text-transform: uppercase;
@@ -228,31 +244,49 @@
 
 
 .services__title-medium {
+	display: flex;
+	flex-wrap: wrap;
 	font-family: MullerBold, Arial, Sans-serif;
 	font-size: 36px;
 	color: #bf0000;
 	text-transform: uppercase;
 }
 
-.services__list {}
 
-.services__item {}
+.services__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 
-.services__image {}
+.services__item {
+	display: flex;
+
+	
+}
+
+.services__image {
+	display: flex;
+	
+}
 
 .h3 {
+	display: flex;
 	font-family: MullerBold, Arial, Sans-serif;
 	font-size: 24px;
-	}
+}
 
 .services__title-small {
+	display: flex;
 	font-family: MullerBold, Arial, Sans-serif;
 	font-size: 24px;
 	color: #000000;
 }
 
 
-.p {}
+.p {
+	display: flex;
+}
 
 .services__text {
 	font-family: MullerBold, Arial, Sans-serif;
@@ -269,9 +303,15 @@
 }
 
 
-.goods__list {}
 
-.goods__item
+.goods__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+
+.goods__item {}
 
 .goods__title-small {
 	font-family: MullerBold, Arial, Sans-serif;
