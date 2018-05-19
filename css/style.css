@@ -1,13 +1,13 @@
 @font-face {
-	font-family: MullerBold, Arial, Sans-serif;
+	font-family: 'MullerBold';
 	src: url("../fonts/Muller/MullerBold.woff2") format(woff2);
 	src: url("../fonts/Muller/MullerBold.woff") format(woff);
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 700;
 }
 
 @font-face {
-	font-family: Geometria, Arial, Sans-serif;
+	font-family: 'Geometria';
 	src: url("../fonts/Geometria/Geometria.woff2") format(woff2);
 	src: url("../fonts/Geometria/Geometria.woff") format(woff);
 	font-style: normal;
@@ -15,26 +15,16 @@
 }
 
 @font-face {
-	font-family: GeometriaBold, Arial, Sans-serif;
+	font-family: 'Geometria';
 	src: url("../fonts/Geometria/GeometriaBold.woff2") format(woff2);
 	src: url("../fonts/Geometria/GeometriaBold.woff") format(woff);
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 700;
 }
 
-.html {
-	background-color: #ffffff;
-	display: flex;
-	flex-direction: column;
-
-}
-
-.boby {
+body {
 	padding: 0;
 	margin: 0;
-	display: flex;
-    background-color: #ffffff;
-    flex-direction: column;
 }
 
 .header {
@@ -48,15 +38,15 @@
 	justify-content: space-between;
 
 	background-color: #ffffff;
-	font-family: Geometria, Arial, Sans-serif;
+	font-family: 'Geometria', 'Arial', sans-serif;
 }
 
 
 .header-top {
 	width: 100%;
-	margin-top: 30 px;
+	margin-top: 30px;
 	margin-right: 50px;
-	margin-left:50px;
+	margin-left: 50px;
 	margin-bottom: 10px;
 	display: flex;
 	flex-wrap: wrap;
@@ -65,7 +55,7 @@
 	box-sizing: border-box;
 
 	background-color: #ffffff;
-	font-family: Geometria, Arial, Sans-serif;
+	font-family: 'Geometria', 'Arial', Sans-serif;
 	font-size: 14px;
 
 }
@@ -88,7 +78,7 @@
 
 }
 
-.header-top__logo {
+/*.header-top__logo {
 	width:
 	height:
 	margin:;
@@ -97,7 +87,7 @@
 	align-items:;
 
 	background-color: #ffffff;
-}
+}*/
 
 .header-top__registration {
 	display: flex;
@@ -135,7 +125,7 @@
 	
 }
 
-.a {
+a {
 	color: inherit;
 	text-decoration: none;
 }
