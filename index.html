@@ -9,11 +9,11 @@
 
 <body>
 	<header class="header">
-		<div class="conteiner">
+		<div class="container">
 			<div class="header__top"> <!--Верхняя часть-->
 
 				<div class="header__logo">
-					<img class="header__logo-image" src=""  alt="РВД-Сервис">	
+					<img class="header__logo-image" src="images/logo-rvd.png"  alt="РВД-Сервис">	
 				</div>
 
 				<div class="header__registration">
@@ -39,7 +39,9 @@
 					<button class="button__callback" type="button">Перезвоните мне</button>
 				</div>
 
-				<a class="header__cart" href="">Корзина</a>
+				<a class="header__cart" href="">
+					<div class="header__cart-count">2</div>
+				</a>
 				
 			</div>
 
@@ -70,112 +72,132 @@
 
 
 	<main class="main">
-		<div class="conteiner__banner">
-			<h1 class="heading">Производство и ремонт РВД для грузовых автомобилей</h1><!--В css-none-->
+		<div class="banner">
+			<div class="container">
+				<h1 class="hidden">Производство и ремонт РВД для грузовых автомобилей</h1><!--В css-none-->
+				<div class="banner__title">Производство и ремонт РВД для грузовых автомобилей</div>
+			</div>
 			
-			<div class="banner"></div>
-			<div class="banner__title">Производство и ремонт РВД для грузовых автомобилей</div>
 		</div>
 
-		<div class="conteiner">
-			<h2 class="services__title-medium">Наши услуги</h2>
+		<div class="services">
+			<div class="container">
+				<h2 class="services__title-medium">Наши услуги</h2>
+			</div>			
+
+			<div class="container container--big">
+
+				<ul class="services__list"><!--Наименование услуг-->
+					<li class="services__item">
+						<div class="services__image-wrap">
+							<img class="services__image" src="images/services1.png" alt="Иконка легкового автомобиля">
+						</div>						
+						<h3 class="services__title-small">РВД для легковых автомобилей</h3>
+					</li>
+
+					<li class="services__item">
+						<div class="services__image-wrap">
+							<img class="services__image" src="images/services2.png" alt="Иконка грузового автомобиля">
+						</div>						
+						<h3 class="services__title-small">РВД для грузовых автомобилей</h3>
+					</li>
+
+					<li class="services__item">
+						<div class="services__image-wrap">
+							<img class="services__image" src="images/services3.png" alt="Иконка мойки">
+						</div>						
+						<h3 class="services__title-small">РВД для моек высокого давления</h3>
+					</li>
+
+					<li class="services__item">
+						<div class="services__image-wrap">
+							<img class="services__image" src="images/services4.png" alt="Иконка коммунальной техники">
+						</div>						
+						<h3 class="services__title-small">РВД для коммунальной техники</h3>
+					</li>
+
+					<li class="services__item">
+						<div class="services__image-wrap">
+							<img class="services__image" src="images/services5.png" alt="Иконка станка">
+						</div>						
+						<h3 class="services__title-small">РВД для станков и оборудования</h3>
+					</li>
+
+					<li class="services__item">
+						<div class="services__image-wrap">
+							<img class="services__image" src="images/services6.png" alt="Иконка каналопромывочной машины">
+						</div>						
+						<h3 class="services__title-small">РВД для каналопромывочных машин</h3>
+					</li>				
+				</ul>
+			</div>
+
+			<div class="container">
+				<p class="services__text">Компания "РВД-Сервис" длительное время успешно занимается производством, а также ремонтом рукавов высокого давления (РВД) и труб высокого давления (ТВД).</p>
+			</div>
+
 		</div>
 		
+		<div class="goods">
+			<div class="container">		
 
-		<div class="conteiner__services">
+		 		<h2 class="goods__title-medium">Популярные товары</h2>
 
-			<ul class="services__list"><!--Наименование услуг-->
-				<li class="services__item">
-					<img class="services__image" src="" alt="Иконка легкового автомобиля">
-					<h3 class="services__title-small">РВД для легковых автомобилей</h3>
-				</li>
+		 		<ul class="goods__list">
 
-				<li class="services__item">
-					<img class="services__image" src="" alt="Иконка грузового автомобиля">
-					<h3 class="services__title-small">РВД для грузовых автомобилей</h3>
-				</li>
+		 			<li class="goods__item">
+		 				<h3 class="goods__title-small">Адаптеры 201,202 (BSP 60º)</h3>
+		 				<div class="goods__image-wrap"><img class="goods__image" src="images/goods1.png" alt="Изображение адаптера"></div>
+		 				<p class="goods__desc">Соединение: внешняя резьба BSPP.</p>
+		 				<p class="goods__desc">Тип: прямой.</p>
+		 				<p class="goods__desc">Уплотнение соединения: по конусу 60º.</p>
+		 				<p class="goods__desc">Соответствие нормам: ISO 8434-6.</p>
+		 				<p class="goods__desc">Материал: сталь.</p>
+		 				<a class="goods__link" href="">Подробнее</a>
+		 			</li>
 
-				<li class="services__item">
-					<img class="services__image" src="" alt="Иконка мойки">
-					<h3 class="services__title-small">РВД для моек высокого давления</h3>
-				</li>
+		 			<li class="goods__item">
+		 				<h3 class="goods__title-small">Героторные гидромоторы BMR</h3>
+		 				<div class="goods__image-wrap"><img class="goods__image" src="images/goods2.jpg" alt="Изображение гидромотора"></div>
+		 				<p class="goods__desc">Диапазон рабочих температур: от -30°C до +90°C.</p>
+		 				<p class="goods__desc">Вязкость масла: 20-75 сСт.</p>
+		 				<p class="goods__desc">Масло в соответствии с: ISO 20/16.</p>
+		 				<p class="goods__desc">Пиковая нагрузка допускается не более 0,6 сек. от каждой минуты.</p>
+		 				<a class="goods__link" href="">Подробнее</a>
+		 			</li>
 
-				<li class="services__item">
-					<img class="services__image" src="" alt="Иконка коммунальной техники">
-					<h3 class="services__title-small">РВД для коммунальной техники</h3>
-				</li>
+		 			<li class="goods__item">
+		 				<h3 class="goods__title-small">Адаптеры 201,202 (BSP 60º)</h3>
+		 				<div class="goods__image-wrap"><img class="goods__image" src="images/goods3.png" alt="Изображение адаптера"></div>
+		 				<p class="goods__desc">Материал:<br> корпус - сталь<br> уплотнение - NBR<br></p>
+		 				<p class="goods__desc">Диапазон рабочих температур:<br> от -20°C до +80°C (NBR)<br> от -15°C до +110°C (VITON)<br></p>
+		 				<p class="goods__desc">Резьба (BSPP)</p>
+		 				<a class="goods__link" href="">Подробнее</a>
+		 			</li>
 
-				<li class="services__item">
-					<img class="services__image" src="" alt="Иконка станка">
-					<h3 class="services__title-small">РВД для станков и оборудования</h3>
-				</li>
+		 			<li class="goods__item">
+		 				<h3 class="goods__title-small">Адаптеры 201,202 (BSP 60º)</h3>
+		 				<div class="goods__image-wrap"><img class="goods__image" src="images/goods4.png" alt="Изображение адаптера"></div>
+		 				<p class="goods__desc">Соединение: внешняя резьба BSPPю</p>
+		 				<p class="goods__desc">Тип: прямой.</p>
+		 				<p class="goods__desc">Уплотнение соединения: по конусу 60º.</p>
+		 				<p class="goods__desc">Соответствие нормам: ISO 8434-6.</p>
+		 				<p class="goods__desc">Материал: сталь.</p>
+		 				<a class="goods__link" href="">Подробнее</a>
+		 			</li>
 
-				<li class="services__item">
-					<img class="services__image" src="" alt="Иконка каналопромывочной машины">
-					<h3 class="services__title-small">РВД для каналопромывочных машин</h3>
-				</li>				
-			</ul>
+		 		</ul>
+	 		</div>
 		</div>
 
-		<div class="conteiner">
-
-			<p class="services__text">Компания "РВД-Сервис" длительное время успешно занимается производством, а также ремонтом рукавов высокого давления (РВД) и труб высокого давления (ТВД).</p>
-
-	 		<h2 class="goods__title-medium">Популярные товары</h2>
-
-	 		<ul class="goods__list">
-
-	 			<li class="goods__item">
-	 				<h3 class="goods__title-small">Адаптеры 201,202 (BSP 60º)</h3>
-	 				<img class="goods__image" src="" alt="Изображение адаптера">
-	 				<p class="goods__desc">Соединение: внешняя резьба BSPP.</p>
-	 				<p class="goods__desc">Тип: прямой.</p>
-	 				<p class="goods__desc">Уплотнение соединения: по конусу 60º.</p>
-	 				<p class="goods__desc">Соответствие нормам: ISO 8434-6.</p>
-	 				<p class="goods__desc">Материал: сталь.</p>
-	 				<a class="goods__link" href="">Подробнее</a>
-	 			</li>
-
-	 			<li class="goods__item">
-	 				<h3 class="goods__title-small">Героторные гидромоторы BMR</h3>
-	 				<img class="goods__image" src="" alt="Изображение гидромотора">
-	 				<p class="goods__desc">Диапазон рабочих температур: от -30°C до +90°C.</p>
-	 				<p class="goods__desc">Вязкость масла: 20-75 сСт.</p>
-	 				<p class="goods__desc">Масло в соответствии с: ISO 20/16.</p>
-	 				<p class="goods__desc">Пиковая нагрузка допускается не более 0,6 сек. от каждой минуты.</p>
-	 				<a class="goods__link" href="">Подробнее</a>
-	 			</li>
-
-	 			<li class="goods__item">
-	 				<h3 class="goods__title-small">Адаптеры 201,202 (BSP 60º)</h3>
-	 				<img class="goods__image" src="" alt="Изображение адаптера">
-	 				<p class="goods__desc">Материал:<br> корпус - сталь<br> уплотнение - NBR<br></p>
-	 				<p class="goods__desc">Диапазон рабочих температур:<br> от -20°C до +80°C (NBR)<br> от -15°C до +110°C (VITON)<br></p>
-	 				<p class="goods__desc">Резьба (BSPP)</p>
-	 				<a class="goods__link" href="">Подробнее</a>
-	 			</li>
-
-	 			<li class="goods__item">
-	 				<h3 class="goods__title-small">Адаптеры 201,202 (BSP 60º)</h3>
-	 				<img class="goods__image" src="" alt="Изображение адаптера">
-	 				<p class="goods__desc">Соединение: внешняя резьба BSPPю</p>
-	 				<p class="goods__desc">Тип: прямой.</p>
-	 				<p class="goods__desc">Уплотнение соединения: по конусу 60º.</p>
-	 				<p class="goods__desc">Соответствие нормам: ISO 8434-6.</p>
-	 				<p class="goods__desc">Материал: сталь.</p>
-	 				<a class="goods__link" href="">Подробнее</a>
-	 			</li>
-
-	 		</ul>
-	 	</div>
 	</main>
 	
 	<footer class="footer">
-		<div class="conteiner">
+		<div class="container">
 			<div class="footer__top"><!--Верхняя часть-->
-				<div class="footer__logo"><img class="footer__logo-image" src="" alt="РВД-Сервис"></div>
+				<div class="footer__logo"><img class="footer__logo-image" src="images/logo-rvd.png" alt="РВД-Сервис"></div>
 
-				<ul class="footer__navigation">
+				<ul class="footer__navigation navigation">
 					<li class="navigation__item">
 						<a class="navigation__link" href="">О компании</a>
 					</li>
@@ -200,7 +222,7 @@
 			<div class="footer__bottom"><!--Нижняя часть-->
 				<div class="footer__copyright">Copyright © 2018 "РВД-Сервис" Все права защищены.</div>
 				<div class="footer__author"><a class="author__link" href="">Создание сайта Digital Agency DIAL</a></div>
-				<img class="footer__author-logo" src="" alt="Логотип DIAL">
+				<img class="footer__author-logo" src="images/logo-dial.jpg" alt="Логотип DIAL">
 			</div>		
 		</div>
 	</footer>
