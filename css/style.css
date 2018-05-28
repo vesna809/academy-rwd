@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'MullerBold';
+	font-family: "MullerBold";
 	src: url("../fonts/Muller/MullerBold.woff2") format(woff2);
 	src: url("../fonts/Muller/MullerBold.woff") format(woff);
 	font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-	font-family: 'Geometria';
+	font-family: "Geometria";
 	src: url("../fonts/Geometria/Geometria.woff2") format(woff2);
 	src: url("../fonts/Geometria/Geometria.woff") format(woff);
 	font-style: normal;
@@ -15,19 +15,20 @@
 }
 
 @font-face {
-	font-family: 'Geometria';
+	font-family: "Geometria";
 	src: url("../fonts/Geometria/GeometriaBold.woff2") format(woff2);
 	src: url("../fonts/Geometria/GeometriaBold.woff") format(woff);
 	font-style: normal;
 	font-weight: 700;
 }
 
-* {}
+/* {}
 
-body
+body {}*/
 
-img {}
-
+img {
+	max-width: 100%;
+}
 
 
 .container {
@@ -36,36 +37,221 @@ img {}
 }
 
 .header__top {
-	display: flex;
-	padding: 40px 0;
+	display: flex;	
 	justify-content: space-between;
 	align-items: center;
+	padding: 40px 0;
+	font-family: "Geometria", "Arial", sans-serif;
+	font-size: 14px;
 }
 
+
+.header__top::after {
+	content: "";
+	display: block;
+	width: 1645px;
+	height: 1px;
+	background: #d1d1d1;
+	position: absolute;
+	top: 110px;
+}
+
+
 .logo {
-	
+	width: 224px;
 }
 
 .logo-image {
 	width: 224px;
 }
 
-.registration-link {
+.header__registration {
 	display: flex;
-	padding: 
-
-
 }
 
-.registration-login {
-	display: flex;
-	padding: 
-
+.header__registration-link {
+	padding: 0 20px;
+	color: #8d8d8d;
+	text-decoration: none;
 }
 
 
 
+.header__registration-link::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 18px;
+	background: #bf0000;
+	position: absolute;
+	top: 50px;
+	left: 585px;
+}
 
+
+
+.header__registration-login {
+	padding: 0 20px;
+	color: #8d8d8d;
+	text-decoration: none;
+}
+
+.header__registration-login::after {
+	content: "";
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 43px;
+	left: 646px;
+	background-image: url("../images/entrance.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+.header__search {
+	display: flex;
+}
+
+
+.header__search::before {
+	content: "";
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 43px;
+	left: 680px;
+	background-image: url("../images/search.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+.header__contacts {
+	display: flex;
+}
+
+.header__phone {
+	padding: 0 20px;
+	color: #8d8d8d;
+	text-decoration: none;
+}
+
+.header__phone::after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 18px;
+	background: #bf0000;
+	position: absolute;
+	top: 50px;
+	left: 1250px;
+}
+
+.header__email {
+	padding: 0 20px;
+	color: #8d8d8d;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+.header__button {
+	display: flex;
+
+}
+
+.button__callback {
+	width: 145px;
+	height: 25px;
+	background-color: #ffffff; 
+	
+}
+
+.button__callback::before {
+	content: "";
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 43px;
+	left: 1490px;
+	background-image: url("../images/phone.png");
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+.header__cart {
+	display: flex;
+}
+
+.header__cart::after {
+	content: "";
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 43px;
+	left: 1740px;
+	background-image: url("../images/cart.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.header__bottom {
+	display: flex;
+}
+
+
+
+
+.navigation__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	font-family: "Geometria", "Arial", sans-serif;
+	font-size: 18px;	
+}
+
+
+.navigation__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	padding: 20px 0;
+	margin: 0;
+}	
+
+
+
+.navigation__link {
+	color: #13151b;
+	text-decoration: none;
+}
 
 
 
@@ -73,362 +259,9 @@ img {}
 	display: none;
 }
 
-{}
 
-{}
 
 
-
-
-
-
-
-
-
-
-
-
-/*
-body {
-	padding: 0;
-	margin: 0;
-}
-
-.header {
-	width: 100%;
-	margin-top: 30px;
-	margin-right: 50px;
-	margin-left: 50px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: space-between;
-
-	background-color: #ffffff;
-	font-family: 'Geometria', 'Arial', sans-serif;
-}
-
-
-.header-top {
-	width: 100%;
-	margin-top: 30px;
-	margin-right: 50px;
-	margin-left: 50px;
-	margin-bottom: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: space-between;
-	box-sizing: border-box;
-
-	background-color: #ffffff;
-	font-family: 'Geometria', 'Arial', Sans-serif;
-	font-size: 14px;
-
-}
-
-.header-bottom {
-	width: 100%;
-	margin-top: 10 px;
-	margin-right: 50px;
-	margin-left:50px;
-	margin-bottom: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: space-between;
-	box-sizing: border-box;
-
-	background-color: #ffffff;
-	font-family: Geometria, Arial, Sans-serif;
-	font-size: 16px;
-
-}
-
-/*.header-top__logo {
-	width:
-	height:
-	margin:;
-	display: flex;
-	flex: none;
-	align-items:;
-
-	background-color: #ffffff;
-}*/
-
-/*.header-top__registration {
-	display: flex;
-	
-}
-
-.header-top__login {
-	display: flex;
-	
-}
-
-.search-form__block {
-	display: flex;
-
-}
-
-.header-top__phone {
-	display: flex;
-	
-}
-
-.header-top__email {
-	display: flex;
-
-}
-
-.header-top__call-back {
-	display: flex;
-	font-size: 16px;
-	
-}
-
-.header-top__cart {
-	display: flex;
-	
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-
-.header-bottom__navigation {
-
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: space-between;
-}
-
-.ul {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: space-between;
-	
-}
-
-.li {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: space-between;
-}
-
-.navigation__list {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: space-between;
-	box-sizing: border-box;
-}
-
-.navigation__item {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: space-between;
-	box-sizing: border-box;
-}
-
-.navigation__link {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: space-between;
-	box-sizing: border-box;
-}
-
-
-.main {
-	width: ;
-	margin-top: ;
-	margin-right: ;
-	margin-left: ;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-
-	background-color: #ffffff;
-}
-
-
-.h1 {
-	display: flex;
-	flex-wrap: wrap;
-	font-family: MullerBold, Arial, Sans-serif;
-	list-style: none;
-	}
-
-.visually-hidden {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	background-color: #ffffff;
-	}
-
-.banner {
-	width: : px;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.banner__title-large {
-	display: flex;
-	flex-wrap: wrap;
-	font-family: MullerBold, Arial, Sans-serif;
-	color: ;
-	font-size: 60px;
-	text-transform: uppercase;
-}
-
-
-
-.h2 {
-	display: flex;
-	flex-wrap: wrap;
-	font-family: MullerBold, Arial, Sans-serif;
-	font-size: 36px;
-	text-transform: uppercase;
-
-}
-
-
-.services__title-medium {
-	display: flex;
-	flex-wrap: wrap;
-	font-family: MullerBold, Arial, Sans-serif;
-	font-size: 36px;
-	color: #bf0000;
-	text-transform: uppercase;
-}
-
-
-.services__list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-.services__item {
-	display: flex;
-
-	
-}
-
-.services__image {
-	display: flex;
-	
-}
-
-.h3 {
-	display: flex;
-	font-family: MullerBold, Arial, Sans-serif;
-	font-size: 24px;
-}
-
-.services__title-small {
-	display: flex;
-	font-family: MullerBold, Arial, Sans-serif;
-	font-size: 24px;
-	color: #000000;
-}
-
-
-.p {
-	display: flex;
-}
-
-.services__text {
-	font-family: MullerBold, Arial, Sans-serif;
-	font-size: 18px;
-	color: #000000;
-}
-
-
-.goods__title-medium {
-	font-family: MullerBold, Arial, Sans-serif;
-	font-size: 36px;
-	color: #bf0000;
-	text-transform: uppercase;
-}
-
-
-
-.goods__list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	
-}
-
-.goods__item {}
-
-.goods__title-small {
-	font-family: MullerBold, Arial, Sans-serif;
-	font-size: 24px;
-	color: #000000;
-}
-
-.goods__image {}
-
-.goods__desc {
-	font-family: Geometria, Arial, Sans-serif;
-	font-size: 16px;
-	color: #000000;
-}
-
-
-.goods__link {
-	font-family: Geometria, Arial, Sans-serif;
-	font-size: 16px;
-	color: #bf0000;
-}
-
-
-
-
-.footer {}
-
-
-.footer-top {}
-
-.footer-top__logo {}
-
-.footer-top__list {}
-
-.navigation__item {}
-
-.navigation__link {}
-
-.footer-top__item {}
-
-.footer__link {}
-
-.footer-top__phone {}
-
-.footer-top__email {}
-
-.footer-bottom {}
-
-.footer-bottom__copyright {}
-
-.footer-bottom__author {}
-
-
-.footer-bottom__author-logo {}
-
-
-.up-button {}
-
-
-{}{}{}{}{}{}
 
 
 
