@@ -22,9 +22,11 @@
 	font-weight: 700;
 }
 
-/* {}
+* {
+	position: relative;
+}
 
-body {}*/
+/*body {}*/
 
 img {
 	max-width: 100%;
@@ -54,7 +56,8 @@ img {
 	background: #d1d1d1;
 	position: absolute;
 	top: 110px;
-}
+	
+} /*серая линия*/
 
 
 .logo {
@@ -67,6 +70,7 @@ img {
 
 .header__registration {
 	display: flex;
+	margin-bottom: -27px;
 }
 
 .header__registration-link {
@@ -83,9 +87,9 @@ img {
 	width: 1px;
 	height: 18px;
 	background: #bf0000;
-	position: absolute;
-	top: 50px;
-	left: 585px;
+	position: relative;
+	top: -15px;
+	right: -107px;
 }
 
 
@@ -101,9 +105,9 @@ img {
 	display: block;
 	width: 35px;
 	height: 35px;
-	position: absolute;
-	top: 43px;
-	left: 646px;
+	position: relative;
+	top: -23px;
+	right: -44px;
 	background-image: url("../images/entrance.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -122,9 +126,9 @@ img {
 	display: block;
 	width: 35px;
 	height: 35px;
-	position: absolute;
-	top: 43px;
-	left: 680px;
+	position: relative;
+	top: -2px;
+	right: 1px;
 	background-image: url("../images/search.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -136,6 +140,7 @@ img {
 
 .header__contacts {
 	display: flex;
+	margin-bottom: -12px;
 }
 
 .header__phone {
@@ -150,9 +155,9 @@ img {
 	width: 1px;
 	height: 18px;
 	background: #bf0000;
-	position: absolute;
-	top: 50px;
-	left: 1250px;
+	position: relative;
+	top: -15px;
+	right: -151px;
 }
 
 .header__email {
@@ -174,23 +179,22 @@ img {
 
 .button__callback {
 	width: 145px;
-	height: 25px;
 	background-color: #ffffff; 
-	
+	height: 25px;
 }
 
 .button__callback::before {
 	content: "";
 	display: block;
-	width: 35px;
-	height: 35px;
-	position: absolute;
-	top: 43px;
-	left: 1490px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: -3px;
+	right: 35px;
 	background-image: url("../images/phone.png");
 	background-position: center;
 	background-repeat: no-repeat;
-
+	
 }
 
 
@@ -207,9 +211,9 @@ img {
 	display: block;
 	width: 35px;
 	height: 35px;
-	position: absolute;
-	top: 43px;
-	left: 1740px;
+	position: relative;
+	top: 1px;
+	right: 20px;
 	background-image: url("../images/cart.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -232,6 +236,7 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	list-style: none;
+
 	font-family: "Geometria", "Arial", sans-serif;
 	font-size: 18px;	
 }
@@ -258,6 +263,120 @@ img {
 .hidden {
 	display: none;
 }
+
+
+.banner__title {
+	font-family: "Muller", "Arial", sans-serif;
+	font-size: 60px;
+	color: #ffffff ;
+	text-align: left;
+	text-transform: uppercase;
+	
+}
+
+.banner {
+	display: flex;
+	content: "";
+	display: block;
+	width: 1920px;
+	height: 802px;
+	position: relative;
+	background-image: url("../images/banner.jpg");
+	background-position: center;
+	background-repeat: no-repeat;	
+}
+
+/*.services {
+	display: flex;
+}*/
+
+.services__title-medium {
+	font-family: "Muller", "Arial", sans-serif;
+	font-size: 36px;
+	color: #bf0000 ;
+	text-transform: uppercase;
+	
+}
+
+.container--big {
+	width: 1920px;
+	margin: 0 auto;
+}
+
+.services__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+
+}
+
+.services__item {
+	display: flex;
+
+
+}
+
+.services__image-wrap
+
+.services__image
+
+.services__title-small {
+	font-family: "Muller", "Arial", sans-serif;
+	font-size: 24px;
+	color: #000000 ;
+	
+}
+
+.services__text {
+	font-family: "Muller", "Arial", sans-serif;
+	font-size: 18px;
+	color: #000000 ;
+	
+}
+
+
+/*.goods {
+	display: flex;
+}*/
+
+.goods__title-medium {
+	font-family: "Muller", "Arial", sans-serif;
+	font-size: 36px;
+	color: #bf0000 ;
+	text-transform: uppercase;
+}
+
+.goods__list
+
+.goods__item
+
+.goods__title-small
+
+.goods__image-wrap
+
+..goods__image
+
+.goods__desc
+
+.goods__link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
