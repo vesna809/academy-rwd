@@ -1,30 +1,26 @@
 @font-face {
 	font-family: "MullerBold";
-	src: url("../fonts/Muller/MullerBold.woff2") format(woff2);
-	src: url("../fonts/Muller/MullerBold.woff") format(woff);
+	src: url("../fonts/Muller/MullerBold.woff2") format("woff2"), url("../fonts/Muller/MullerBold.woff") format("woff");
 	font-style: normal;
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: "Geometria";
-	src: url("../fonts/Geometria/Geometria.woff2") format(woff2);
-	src: url("../fonts/Geometria/Geometria.woff") format(woff);
+	src: url("../fonts/Geometria/Geometria.woff2") format("woff2"), url("../fonts/Geometria/Geometria.woff") format("woff");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: "Geometria";
-	src: url("../fonts/Geometria/GeometriaBold.woff2") format(woff2);
-	src: url("../fonts/Geometria/GeometriaBold.woff") format(woff);
+	src: url("../fonts/Geometria/GeometriaBold.woff2") format("woff2"), url("../fonts/Geometria/GeometriaBold.woff") format("woff");
 	font-style: normal;
 	font-weight: 700;
 }
 
-* {
-	position: relative;
-	box-sizing: content-box;
+* {	position: relative;
+	box-sizing: border-box;
 }
 
 img {
@@ -33,10 +29,12 @@ img {
 
 body {
 	font-family: "MullerBold", "Arial", sans-serif;
+	font-size: 18px;
 }
 
 .container {
 	width: 1645px;
+	padding: 0 30px;
 	margin: 0 auto;
 }
 
@@ -47,17 +45,8 @@ body {
 	padding: 40px 0;
 	font-family: "Geometria", "Arial", sans-serif;
 	font-size: 14px;
+	border-bottom: 1px solid #d1d1d1
 }
-
-.header__top::after {
-	content: "";
-	display: block;
-	width: 1645px;
-	height: 1px;
-	background: #d1d1d1;
-	position: absolute;
-	top: 110px;
-} /*серая линия*/
 
 .logo {
 	width: 224px;
@@ -111,21 +100,24 @@ body {
 	display: flex;
 }
 
-.header__search::before {
+.search__submit {
 	content: "";
 	display: block;
 	width: 35px;
 	height: 35px;
 	position: absolute;
 	top: -5px;
-	right: 205px;
+	right: 190px;
 	background-image: url("../images/search.png");
 	background-position: center;
 	background-repeat: no-repeat;
+	background-color: #ffffff;
+	border: none;
 }
 
-/* .search__submit {}
-.search__text {} */
+/*.search__text {
+} */
+
 
 .header__contacts {
 	display: flex;
@@ -154,55 +146,31 @@ body {
 	text-decoration: none;
 }
 
-
-
 .header__button {
 	display: flex;
-
 }
 
 .button__callback {
-	width: 145px;
-	height: 25px;
-	background-color: #ffffff; 
-	
-}
-
-.button__callback::before {
-	content: "";
-	display: block;
-	width: 35px;
-	height: 35px;
-	position: absolute;
-	top: -5px;
-	right: 145px;
+	padding-left: 40px;
 	background-image: url("../images/phone.png");
-	background-position: center;
+	background-position: 15px;
 	background-repeat: no-repeat;
-
+	background-color: #ffffff;
 }
-
 
 .header__cart {
 	display: flex;
-}
-
-.header__cart::after {
-	content: "";
-	display: block;
 	width: 35px;
 	height: 35px;
-	position: absolute;
-	top: -7px;
-	right: 4px;
 	background-image: url("../images/cart.png");
 	background-position: center;
 	background-repeat: no-repeat;
+	background-color: #ffffff;
 }
 
 /* .header__cart-count {} */
 
-.header__bottom {
+/*.header__bottom {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -214,7 +182,17 @@ body {
 	display: flex;
 	width: 100%;
 }
+*/
 
+
+.header__bottom {
+	font-family: "Geometria", "Arial", sans-serif;
+	font-size: 14px;
+}
+
+.header__navigation {
+	width: 100%;
+}
 
 .navigation__list {
 	display: flex;
@@ -236,7 +214,6 @@ body {
 	list-style: none;
 }	
 
-
 .navigation__link {
 	color: #13151b;
 	text-decoration: none;
@@ -244,22 +221,11 @@ body {
 
 .hidden {
 	display: none;
-}
-
-
-.banner__title {
-	font-family: "Muller", "Arial", sans-serif;
-	font-size: 60px;
-	color: #ffffff ;
-	text-align: left;
-	text-transform: uppercase;
-	
-}
+} /*h1*/
 
 .banner {
 	display: flex;
-	content: "";
-	display: block;
+	align-items: center;
 	width: 1920px;
 	height: 802px;
 	padding: 30px 0;
@@ -268,11 +234,33 @@ body {
 	background-repeat: no-repeat;	
 }
 
+.banner::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 1920px;
+	height: 802px;
+	padding: 30px 0;
+	background-color: rgba(0 0 0 0.5);
+	background-position: center;
+}
+
+.banner__title {
+	width: 870px;
+	font-family: "MullerBold", "Arial", sans-serif;
+	font-size: 60px;
+	color: #ffffff ;
+	text-align: left;
+	text-transform: uppercase;
+	
+}
+
+
 
 /*.services {	}*/
 
 .services__title-medium {
-	font-family: "Muller", "Arial", sans-serif;
+	font-family: "MullerBold", "Arial", sans-serif;
 	font-size: 36px;
 	color: #bf0000 ;
 	text-transform: uppercase;
@@ -349,7 +337,7 @@ body {
 
 .goods__item {
 	width: 390px;
-	height: 643px;
+	min-height: 643px;
 	border: 1px solid #8d8d8d;
 
 }
@@ -430,5 +418,38 @@ body {
 
 
 
+.goods__link {
+	display: flex;
+	align-items: center;
+}
 
+.arrow {
+	display: block;
+	width: 20px;
+	height: 10px;
+	margin-left: 10px;
+}
 
+.arrow::before {
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: red;
+	position: absolute;
+	left: 0;
+	top: 4px;
+}
+
+.arrow::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border: 5px solid red;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	position: absolute;
+	right: 0;
+	top: 3px;
+	transform: rotate(45deg);
+}
