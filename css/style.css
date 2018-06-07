@@ -394,10 +394,11 @@ body {
 	color: #ffffff;
 }
 
-.footer__top {
+.footer__items {
 	display: flex;	
 	justify-content: space-between;
 	align-items: center;
+	padding: 40px 0;
 	font-family: "Geometria", "Arial", sans-serif;
 	font-size: 14px;
 	border-top: 1px solid #d1d1d1
@@ -409,12 +410,9 @@ body {
 	align-items: center;
 	list-style: none;
 	width: 1000px;
-	padding: 35px 0px;
-	margin: 0 10px;
 	font-family: "Geometria", "Arial", sans-serif;
 	font-size: 18px;	
 }
-
 
 .footer__contacts {
 	display: flex;
@@ -455,6 +453,16 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+/*
 .footer__copyright {
 	padding: 25px 0;
 }
@@ -500,7 +508,7 @@ body {
 
 
 
-
+*/
 
 
 
