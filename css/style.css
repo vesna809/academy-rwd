@@ -166,6 +166,7 @@ body {
 	background-color: #ffffff;
 	font-family: "Geometria", "Arial", sans-serif;
 	font-size: 14px;
+	cursor: pointer;
 }
 
 .header__cart {
@@ -207,7 +208,7 @@ body {
 	align-items: center;
 	list-style: none;
 	width: 100%;
-	padding: 35px 0;
+	padding: 15px 0;
 	margin: 0;
 	font-family: "Geometria", "Arial", sans-serif;
 	font-size: 18px;	
@@ -217,8 +218,34 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 20px 0;
 	list-style: none;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	transition: 0.3s;
 }	
+
+.navigation__item--arrow::after {
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	border-right: 2px solid #13151b;
+	border-bottom: 2px solid #13151b;
+	right: -25px;
+	top: 25px;
+	transform: rotate(45deg);
+	transition: 0.3s;
+}
+
+.navigation__item:hover {
+	border-color: #bf0000;
+}
+
+.navigation__item:hover::after {
+	transform: rotate(-45deg);
+}
 
 .navigation__link {
 	color: #13151b;
@@ -270,7 +297,7 @@ body {
 }
 
 .container--big {
-	width: 1920px;
+	width: 1900px;
 	padding: 0;
 	margin: 0 auto;
 }
@@ -299,6 +326,14 @@ body {
 	background-color: #f1f1f1;
 }
 
+.services__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-decoration: none;
+}
+
 .services__image-wrap {
 	display: flex;
 	justify-content: center;
@@ -309,7 +344,7 @@ body {
 
 
 .services__title-small {
-	font-family: "Muller", "Arial", sans-serif;
+	font-family: "MullerBold", "Arial", sans-serif;
 	font-size: 24px;
 	color: #000000;
 	margin: 0;
@@ -317,7 +352,7 @@ body {
 }
 
 .services__text {
-	font-family: "Muller", "Arial", sans-serif;
+	font-family: "MullerBold", "Arial", sans-serif;
 	font-size: 18px;
 	color: #000000;
 	margin: 50px 0;
@@ -325,7 +360,7 @@ body {
 
 
 .goods__title-medium {
-	font-family: "Muller", "Arial", sans-serif;
+	font-family: "MullerBold", "Arial", sans-serif;
 	font-size: 36px;
 	color: #bf0000 ;
 	text-transform: uppercase;
@@ -345,6 +380,8 @@ body {
 	flex-direction: column;
 	width: 390px;
 	min-height: 643px;
+	padding: 40px 20px;
+	margin-top: auto;
 	border: 3px solid #8d8d8d;
 }
 
@@ -352,7 +389,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: "Muller", "Arial", sans-serif;
+	margin: 0;
+	font-family: "MullerBold", "Arial", sans-serif;
 	font-size: 24px;
 	color: #000000;
 }
@@ -367,9 +405,9 @@ body {
 }
 
 .goods__desc-wrap {
-	height: 190px;
-	padding: 0 20px;
-	margin-bottom: 50px;
+	min-height: 190px;
+	margin-top: auto;
+	margin-bottom: 35px;
 	font-family: "Geometria", "Arial", sans-serif;
 	font-size: 16px;
 	color: #000000;
@@ -380,7 +418,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 255px;
-	height: 60px;
+	min-height: 60px;
 	margin: 0 auto;
 	text-decoration: none;
 	background-color: #bf0000;
@@ -515,6 +553,7 @@ body {
 	background-image: url("../images/upstairs.png");
 	background-position: center;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 
